@@ -8,7 +8,6 @@ session_start();
 </head>
 <body>
         <div class="d-flex" id="wrapper">
-            <!-- Sidebar-->
             <div class="border-end bg-white" id="sidebar-wrapper">
                 <div class="sidebar-heading border-bottom bg-light">Company Tasks</div>
                 <div class="list-group list-group-flush">

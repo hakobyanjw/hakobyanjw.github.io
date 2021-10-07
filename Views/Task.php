@@ -32,6 +32,7 @@ session_start();
                                         <a class="dropdown-item" href='?sort=<?php static::sorttype("email"); ?>'>Email</a>
                                         <a class="dropdown-item" href='?sort=<?php static::sorttype("name"); ?>'>Name</a>
                                         <a class="dropdown-item" href='?sort=<?php static::sorttype("header"); ?>'>Title</a>
+                                        <a class="dropdown-item" href='?sort=<?php static::sorttype("done"); ?>'>Status</a>
                                     </div>
                                 </li>
                             </ul>
@@ -41,13 +42,13 @@ session_start();
                 <div class="container-fluid">
                     <h1 class="mt-4">Task List</h1>
                     <br>
-                    <table class="table">
+                    <table class="table table-borderless">
                         <tr>
                             <td><b>Task</b></td>
                             <td><b>Description</b></td>
                             <td><b>Name</b></td>
                             <td><b>Email</b></td>
-                            <td><b>Done</b></td>
+                            <td><b>Status</b></td>
                         </tr>
                         <tr>
                             <td><a href='/taskview?id=<?php static::doTaskList("0","id"); ?>'><?php static::doTaskList("0","header"); ?></a></td>

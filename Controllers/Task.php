@@ -29,9 +29,9 @@ class Task extends Controller {
         
         if(isset($_GET["sort"])){
             $sort=htmlspecialchars($_GET["sort"]);
-            if($sort=="name" or $sort=="email" or $sort=="header"){
+            if($sort=="name" or $sort=="email" or $sort=="header" or $sort=="done"){
             $sort=" ORDER BY $sort ASC LIMIT $start_from, $limit";
-            }else if($sort=="name_r" or $sort=="email_r" or $sort=="header_r"){
+            }else if($sort=="name_r" or $sort=="email_r" or $sort=="header_r" or $sort=="done_r"){
                 $sort=substr($sort, 0, -2);
                 $sort=" ORDER BY $sort DESC LIMIT $start_from, $limit";
             }else{
@@ -69,10 +69,10 @@ class Task extends Controller {
         $start_from=($page-1)*$limit;
         if(isset($_GET["sort"])){
             $sort=htmlspecialchars($_GET["sort"]);
-            if($sort=="name" or $sort=="email" or $sort=="header"){
+            if($sort=="name" or $sort=="email" or $sort=="header" or $sort=="done"){
             $sortlink="&sort=$sort";   
             $sort=" ORDER BY $sort ASC LIMIT $start_from, $limit";
-            }else if($sort=="name_r" or $sort=="email_r" or $sort=="header_r"){
+            }else if($sort=="name_r" or $sort=="email_r" or $sort=="header_r" or $sort=="done_r"){
                 $sortlink="&sort=$sort";
                 $sort=substr($sort, 0, -2);
                 $sort=" ORDER BY $sort DESC LIMIT $start_from, $limit";

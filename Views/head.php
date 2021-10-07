@@ -4,6 +4,6 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Task Organizer</title>
-        <link href="/css/styles.css" rel="stylesheet" />
         <link href="/css/view.css" rel="stylesheet" />
+        <link href="/css/styles.css" rel="stylesheet" />
         

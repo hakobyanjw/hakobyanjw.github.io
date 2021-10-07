@@ -9,6 +9,8 @@ session_start();
   <body>
         <?php static::UpdateTask(); ?>
         <?php static::checkifisset(); ?> 
+        <?php static::ErrorMessages(); ?> 
+        
         <div class="d-flex" id="wrapper">
             <div class="border-end bg-white" id="sidebar-wrapper">
                 <div class="sidebar-heading border-bottom bg-light">Company Tasks</div>
