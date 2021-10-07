@@ -1,0 +1,48 @@
+.taskexist{
+    padding:10px;
+    margin:10px;
+    background:red;
+    color:white;
+}
+.loginerror{
+    padding:10px;
+    margin:10px auto;
+    background:red;
+    color:white;
+}
+.pagsquere{
+    float:left;
+    padding:10px;
+    margin:10px;
+    border:solid 1px;
+    border-radius:5px;
+}
+.taskadded{
+    padding:10px;
+    margin:10px;
+    background:green;
+    color:white;
+}
+.taskfulfilled{
+    color:red;
+    border-radius:10px;
+}
+.taskaccomplished{
+    color:green;
+    border-radius:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
